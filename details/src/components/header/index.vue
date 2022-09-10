@@ -1,6 +1,10 @@
 <template>
-  <div>
-    <router-view />
+  <div class="header">
+    <p>首页</p>
+    <p>导航</p>
+    <p></p>
+    <p></p>
+    <p></p>
   </div>
 </template>
 
@@ -16,8 +20,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-div {
-  height: 100%;
-  background: #177cb0;
+.header {
+  display: flex;
+
+  background: yellow;
 }
 </style>

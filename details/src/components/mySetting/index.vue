@@ -1,12 +1,11 @@
 <template>
-  <div>
-    <router-view />
-  </div>
+  <div>我的设置</div>
 </template>
 
 <script>
 export default {
   props: {},
+
   data() {
     return {};
   },
@@ -16,8 +15,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-div {
-  height: 100%;
-  background: #177cb0;
-}
 </style>

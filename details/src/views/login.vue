@@ -1,6 +1,7 @@
 <template>
   <div>
-    <router-view />
+    <p @click="login">登录页</p>
+    <el-button>点击</el-button>
   </div>
 </template>
 
@@ -10,14 +11,17 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    login() {
+      this.$router.push("/index");
+    },
+  },
   components: {},
 };
 </script>
 
 <style scoped lang="scss">
-div {
-  height: 100%;
-  background: #177cb0;
+p {
+  font-size: 12px;
 }
 </style>

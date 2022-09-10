@@ -1,15 +1,19 @@
 <template>
-  <div></div>
+  <div>
+    这里是var
+    <button @click="btn"></button>
+  </div>
 </template>
 
 <script>
 export default {
   props: {},
-
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    btn() {},
+  },
   components: {},
 };
 </script>
