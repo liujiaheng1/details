@@ -13,13 +13,13 @@
           active-text-color="#ffd04b"
           router
         >
-          <el-menu-item index="2" route="/index/helloWord">
-            <i class="el-icon-menu"></i>
-            <span slot="title" @click="tally">记账</span>
-          </el-menu-item>
           <el-menu-item index="3" route="/index/var">
             <i class="el-icon-document"></i>
             <span slot="title">暂时未定</span>
+          </el-menu-item>
+          <el-menu-item index="2" route="/index/helloWord">
+            <i class="el-icon-menu"></i>
+            <span slot="title" @click="tally">记录</span>
           </el-menu-item>
           <el-menu-item index="4" route="/index/mySetting">
             <i class="el-icon-setting"></i>

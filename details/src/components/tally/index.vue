@@ -126,10 +126,16 @@ export default {
     },
     async submit() {
       const id = await getTime();
+      if (this.time == "" || this.food == "" || this.money == "") {
+        return;
+      }
       this.food[1] = Number(this.food[1]);
       await Api.addFood(this.time, this.food, this.money, id);
       const list = await Api.getAllList();
       this.tableData = list;
+      this.time = "";
+      this.food = "";
+      this.money = "";
     },
     getHeight() {
       let boxH = document.getElementsByClassName("addTally")[0];
